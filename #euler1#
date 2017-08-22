@@ -1,0 +1,6 @@
+(defun sum-3-5 (list)
+  (apply '+ (mapcar
+	     '(lambda (x) (if (or (eql (% x 3) 0) (eql (% x 5)0))
+			      x 0) )
+	     list) ))
+(sum-3-5 (number-sequence 1 1000) )
